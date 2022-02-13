@@ -1,0 +1,54 @@
+html {
+    font-size: 62.5%; /* 10px = 1rem */
+    box-sizing: border-box;
+}
+
+*, *:before, *:after{
+    box-sizing: inherit;
+}
+
+@font-face {
+    font-family: Upheaval;
+    src: url("../fonts/upheavtt.ttf");
+}
+
+body {
+    background: url(../img/wallpaperflare.com_wallpaper.jpg);
+    width: 100%;
+    display: block;
+    background-repeat:repeat-y;
+    background-size: cover;
+    background-position: center center;
+    font-size: 1.6rem;
+    line-height: 1.8;
+
+    @include phone {
+        background: url(../img/phone_wallpaper.jpg);
+        background-repeat:repeat-y;
+        background-size: cover;
+        background-position: center center;
+    }
+}
+
+.contenedor {
+    width: 50%;
+    max-width: 120rem;
+    margin: 0 auto;
+    
+    @include phone {
+        width: 100%;
+    }
+}
+
+h1,h2,h3 {
+    margin: auto 0;
+    text-align: center;
+    font-size: 6rem;
+    color: white;
+}
+
+p {
+    margin: auto 0;
+    text-align: center;
+    color: white;
+}
